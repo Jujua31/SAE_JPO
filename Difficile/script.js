@@ -1,7 +1,7 @@
 // Questions will be asked
 const Questions = [{
   id: 0,
-  q: "Quesl mot-clé utiliser pour définir une fonction",
+  q: "Quesl mot-clé utiliser pour définir une fonction \n _____Ok test",
   a: [{ text: "definir", isCorrect: false },
       { text: "def", isCorrect: true },
       { text: "fonction", isCorrect: false },
@@ -39,6 +39,7 @@ var start = true;
 function iterate(id) {
 
 // Getting the result display section
+var rep = true;
 var result = document.getElementsByClassName("result");
 result[0].innerText = "";
 
@@ -111,13 +112,19 @@ const evaluate = document.getElementsByClassName("evaluate");
 
 // Evaluate method
 evaluate[0].addEventListener("click", () => {
-  if (selected == "true") {
+  if (rep){
+    result[0].innerHTML = "Ok"
+    if (selected == "true") {
       result[0].innerHTML = "True";
       result[0].style.color = "green";
   } else {
       result[0].innerHTML = "False";
       result[0].style.color = "red";
   }
+  rep = false
+} else {
+  result[0].innerHTML = "Déjà repondu"
+}
 })
 }
 
@@ -134,6 +141,10 @@ start = false;
 if (id < 2) {
   id++;
   iterate(id);
+  op1.style.backgroundColor = "lightskyblue";
+  op2.style.backgroundColor = "lightskyblue";
+  op3.style.backgroundColor = "lightskyblue";
+  op3.style.backgroundColor = "lightskyblue";
   console.log(id);
 }
 
