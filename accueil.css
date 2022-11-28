@@ -17,17 +17,11 @@ footer img{
     height: 5%;
 }
 
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:900i');
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .wrapper {
