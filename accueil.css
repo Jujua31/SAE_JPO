@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -11,6 +12,7 @@ header {
 
 h1 {
     text-align: center;
+    color: white;
 }
 
 footer p {
