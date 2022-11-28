@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:900i');
 
-* {
-  box-sizing: border-box;
-}
 
 .wrapper {
   display: flex;
   justify-content: center;
+}
+
+#bout1 {
+    margin-left: 0em;
+}
+
+#bout2 {
+    margin-left: 30%;
 }
 
 .cta {

@@ -25,3 +25,9 @@ footer img{
 input{
     margin: 5%;
 }
+
+.bouttons {
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
