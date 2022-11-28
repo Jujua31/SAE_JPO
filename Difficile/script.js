@@ -113,7 +113,6 @@ const evaluate = document.getElementsByClassName("evaluate");
 // Evaluate method
 evaluate[0].addEventListener("click", () => {
   if (rep){
-    result[0].innerHTML = "Ok"
     if (selected == "true") {
       result[0].innerHTML = "True";
       result[0].style.color = "green";
@@ -121,9 +120,10 @@ evaluate[0].addEventListener("click", () => {
       result[0].innerHTML = "False";
       result[0].style.color = "red";
   }
-  rep = false
+  rep = false;
 } else {
-  result[0].innerHTML = "Déjà repondu"
+  result[0].innerHTML = "Déjà repondu";
+  result[0].style.color = "red";
 }
 })
 }
