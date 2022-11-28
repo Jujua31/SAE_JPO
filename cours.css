@@ -1,3 +1,30 @@
+body{
+    margin: 10px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: darkorchid;
+    margin: 0px;
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+
+footer p {
+    display: inline;
+}
+
+footer img{
+    height: 5%;
+    width: 10%;
+}
+
 section{
     padding: 15px;
 }
