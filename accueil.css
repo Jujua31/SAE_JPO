@@ -1,8 +1,14 @@
 body{
-    margin:0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 header {
-    background-color: rgb(139, 16, 123);
+    background-color: darkorchid;
+    margin: 0px;
+    padding: 50px;
 }
 
+h1 {
+    text-align: center;
+}
