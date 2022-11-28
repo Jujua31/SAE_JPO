@@ -1,35 +1,54 @@
 // Questions will be asked
 const Questions = [{
   id: 0,
-  q: "Quesl mot-clé utiliser pour définir une fonction \n _____Ok test",
-  a: [{ text: "definir", isCorrect: false },
-      { text: "def", isCorrect: true },
-      { text: "fonction", isCorrect: false },
-      { text: "start", isCorrect: false }
+  q: "liste = [2,4,1,8]\nfor elt in liste: \n__print('SUS')\nCombien de fois la boucle 'for' s'exécute ?",
+  a: [{ text: "8", isCorrect: false },
+      { text: "4", isCorrect: true },
+      { text: "3", isCorrect: false },
+      { text: "1", isCorrect: false }
   ]
 
 },
 {
   id: 1,
-  q: "What is the capital of Thailand?",
-  a: [{ text: "Lampang", isCorrect: false, isSelected: false },
-      { text: "phuket", isCorrect: false },
-      { text: "Ayutthaya", isCorrect: false },
-      { text: "Bangkok", isCorrect: true }
+  q: "liste = [1,2,3,4]\nfor elt in liste:\n__res = res + elt\nCombien vaut res après l'exécution de ce code ?",
+  a: [{ text: "4", isCorrect: false, isSelected: false },
+      { text: "0", isCorrect: false },
+      { text: "1", isCorrect: false },
+      { text: "10", isCorrect: true }
   ]
 
 },
 {
   id: 2,
-  q: "What is the capital of Gujarat",
-  a: [{ text: "surat", isCorrect: false },
-      { text: "vadodara", isCorrect: false },
-      { text: "gandhinagar", isCorrect: true },
-      { text: "rajkot", isCorrect: false }
+  q: "i = 0\nwhile i < 3:\n__print(i)\n__i = i + 1\nQue vaut i a la fin de la boucle ?",
+  a: [{ text: "2", isCorrect: true },
+      { text: "1", isCorrect: false },
+      { text: "3", isCorrect: false },
+      { text: "La boucle ne s'arrête jamais", isCorrect: false }
   ]
 
-}
+},
+{
+  id: 3,
+  q: "liste = [2,1,4,8]\nfor i in range(len(liste)):\n__print('sussy baka')\nQue vaut i après l'exécution de ce code ?",
+  a: [{ text: "0", isCorrect: false },
+      { text: "8", isCorrect: false },
+      { text: "3", isCorrect: false },
+      { text: "4", isCorrect: true }
+  ]
 
+},
+{
+  id: 4,
+  q: "liste = [1,2,3,4]\nres = []\nfor elt in liste:\n__res.append(elt+1)\nQue contient la liste res après l'exécution de ce code ?",
+  a: [{ text: "[]", isCorrect: false },
+      { text: "[1,2,3,4]", isCorrect: true },
+      { text: "[2,3,4,5]", isCorrect: false },
+      { text: "[5,6,7,8]", isCorrect: false }
+  ]
+
+},
 ]
 
 // Set start
@@ -39,7 +58,6 @@ var start = true;
 function iterate(id) {
 
 // Getting the result display section
-var rep = true;
 var result = document.getElementsByClassName("result");
 result[0].innerText = "";
 
@@ -112,19 +130,13 @@ const evaluate = document.getElementsByClassName("evaluate");
 
 // Evaluate method
 evaluate[0].addEventListener("click", () => {
-  if (rep){
-    if (selected == "true") {
+  if (selected == "true") {
       result[0].innerHTML = "True";
       result[0].style.color = "green";
   } else {
       result[0].innerHTML = "False";
       result[0].style.color = "red";
   }
-  rep = false;
-} else {
-  result[0].innerHTML = "Déjà repondu";
-  result[0].style.color = "red";
-}
 })
 }
 
@@ -141,10 +153,6 @@ start = false;
 if (id < 2) {
   id++;
   iterate(id);
-  op1.style.backgroundColor = "lightskyblue";
-  op2.style.backgroundColor = "lightskyblue";
-  op3.style.backgroundColor = "lightskyblue";
-  op3.style.backgroundColor = "lightskyblue";
   console.log(id);
 }
 
