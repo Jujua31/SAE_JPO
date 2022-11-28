@@ -11,25 +11,114 @@ const Questions = [{
 },
 {
   id: 1,
-  q: "What is the capital of Thailand?",
-  a: [{ text: "Lampang", isCorrect: false, isSelected: false },
-      { text: "phuket", isCorrect: false },
-      { text: "Ayutthaya", isCorrect: false },
-      { text: "Bangkok", isCorrect: true }
+  q: "Que retourne le programme suivant : a = () / a.append(1) ?",
+  a: [{ text: "Erreur", isCorrect: true, isSelected: false },
+      { text: "1", isCorrect: false },
+      { text: "(1)", isCorrect: false },
+      { text: "()", isCorrect: false }
   ]
 
 },
 {
   id: 2,
-  q: "What is the capital of Gujarat",
-  a: [{ text: "surat", isCorrect: false },
-      { text: "vadodara", isCorrect: false },
-      { text: "gandhinagar", isCorrect: true },
-      { text: "rajkot", isCorrect: false }
+  q: "Comment retourner une variable à la fin d'une fonction ?",
+  a: [{ text: "retourner", isCorrect: false },
+      { text: "give", isCorrect: false },
+      { text: "end", isCorrect: false },
+      { text: "return", isCorrect: true }
   ]
 
-}
+},
+{
+  id: 3,
+  q: "Comment ajouter i = 2 à cpt déjà égal à 5 (de manière à obtenir la somme : 5 + 2 = 7) ?",
+  a: [{ text: "cpt + i", isCorrect: false },
+      { text: "cpt = cpt + i", isCorrect: true },
+      { text: "cpt = i", isCorrect: false },
+      { text: "i = cpt", isCorrect: false }
+  ]
 
+},
+{
+  id: 4,
+  q: "Quel mot-clé utiliser pour ajouter une valeur à une liste ?",
+  a: [{ text: "remove", isCorrect: false },
+      { text: "add", isCorrect: false },
+      { text: "append", isCorrect: true },
+      { text: "+", isCorrect: false }
+  ]
+
+},
+{
+  id: 5,
+  q: "Comment modifier la valeur 1 dans le tuple (1,2) en 3 ?",
+  a: [{ text: "tuple[0] = 3", isCorrect: true },
+      { text: "tiple[0][3]", isCorrect: false },
+      { text: "tuple[1] = 3", isCorrect: false },
+      { text: "tuple['3']", isCorrect: false }
+  ]
+
+},
+{
+  id: 6,
+  q: "De quel type est le tuple ?",
+  a: [{ text: "non-mutable", isCorrect: true },
+      { text: "unmute", isCorrect: false },
+      { text: "mutable", isCorrect: false },
+      { text: "mute", isCorrect: false }
+  ]
+
+},
+{
+  id: 7,
+  q: "De quel type est la liste ?",
+  a: [{ text: "mutable", isCorrect: true },
+      { text: "mutant", isCorrect: false },
+      { text: "non-mutable", isCorrect: false },
+      { text: "unmute", isCorrect: false }
+  ]
+
+},
+{
+  id: 8,
+  q: "Comment définir une liste ?",
+  a: [{ text: "liste = ()", isCorrect: false },
+      { text: "liste = []", isCorrect: true },
+      { text: "liste = ''", isCorrect: false },
+      { text: "liste = 0", isCorrect: false }
+  ]
+
+},
+{
+  id: 9,
+  q: "Comment connaître la taille d'une chaine de caractères ?",
+  a: [{ text: "taille(mot)", isCorrect: false },
+      { text: "size(mot)", isCorrect: false },
+      { text: "len(mot)", isCorrect: true },
+      { text: "length(mot)", isCorrect: false }
+  ]
+
+},
+{
+  id: 10,
+  q: "Comment accéder à la valeur 5 dans la liste [1,5,7,9] ?",
+  a: [{ text: "liste[1]", isCorrect: true },
+      { text: "liste[5]", isCorrect: false },
+      { text: "liste[2]", isCorrect: false },
+      { text: "liste['5']", isCorrect: false }
+  ]
+
+},
+{
+  id: 11,
+  q: "Comment accéder à la valeur d'indice 2 dans le tuple (2,9,4) ?",
+  a: [{ text: "tuple['4']", isCorrect: false },
+      { text: "tuple[2]", isCorrect: false },
+      { text: "tuple[1]", isCorrect: true },
+      { text: "tuple[4]", isCorrect: false }
+  ]
+
+},
 ]
 
 // Set start
