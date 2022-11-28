@@ -131,7 +131,7 @@ const Questions = [{
 },
 {
   id: 13,
-  q: "Combien vaut c dans le programme suivant ? : a=3; b=8; c=a+b",
+  q: "Combien vaut c dans le programme suivant ? :\na=3\nb=8\nc=a+b",
   a: [{ text: "None", isCorrect: false },
       { text: "'a+b'", isCorrect: false },
       { text: "a+b", isCorrect: false },
@@ -141,7 +141,7 @@ const Questions = [{
 },
 {
   id: 14,
-  q: " Que vaut b à la fin dans le programme suivant ? : a=5; b=4; c=a+b; b=c+a",
+  q: " Que vaut b à la fin dans le programme suivant ? :\na=5\nb=4\nc=a+b\nb=c+a",
   a: [{ text: "False", isCorrect: false },
       { text: "14", isCorrect: true },
       { text: "9", isCorrect: false },
