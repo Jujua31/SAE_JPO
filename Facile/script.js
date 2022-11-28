@@ -1,34 +1,156 @@
 // Questions will be asked
 const Questions = [{
   id: 0,
-  q: "Quesl mot-clé utiliser pour définir une fonction",
-  a: [{ text: "definir", isCorrect: false },
-      { text: "def", isCorrect: true },
-      { text: "fonction", isCorrect: false },
-      { text: "start", isCorrect: false }
+  q: "x=5.15   Quel type de variable est x ?",
+  a: [{ text: "int", isCorrect: false },
+      { text: "float", isCorrect: true },
+      { text: "decimal", isCorrect: false },
+      { text: "str", isCorrect: false }
   ]
 
 },
 {
   id: 1,
-  q: "What is the capital of Thailand?",
-  a: [{ text: "Lampang", isCorrect: false, isSelected: false },
-      { text: "phuket", isCorrect: false },
-      { text: "Ayutthaya", isCorrect: false },
-      { text: "Bangkok", isCorrect: true }
+  q: "y=False   Quel type de variable est y ?",
+  a: [{ text: "bool", isCorrect: true},
+      { text: "boule", isCorrect: false },
+      { text: "float", isCorrect: false },
+      { text: "flop", isCorrect: false }
   ]
 
 },
 {
   id: 2,
-  q: "What is the capital of Gujarat",
-  a: [{ text: "surat", isCorrect: false },
-      { text: "vadodara", isCorrect: false },
-      { text: "gandhinagar", isCorrect: true },
-      { text: "rajkot", isCorrect: false }
+  q: "z='z'   Quel type de variable est z ?",
+  a: [{ text: "int", isCorrect: false },
+      { text: "float", isCorrect: false },
+      { text: "str", isCorrect: true },
+      { text: "bool", isCorrect: false }
+  ]
+
+},
+{
+  id: 3,
+  q: "a=5.0   Quel type de variable est a ?",
+  a: [{ text: "int", isCorrect: false },
+      { text: "float", isCorrect: true },
+      { text: "str", isCorrect: false },
+      { text: "bool", isCorrect: false }
+  ]
+
+},
+{
+  id: 4,
+  q: "Que renvoie 10-3 ?",
+  a: [{ text: "'10-3'", isCorrect: false },
+      { text: "'7'", isCorrect: false },
+      { text: "10-3", isCorrect: false },
+      { text: "7", isCorrect: true }
+  ]
+
+},
+{
+  id: 5,
+  q: "Que renvoie 5*5 ?",
+  a: [{ text: "25", isCorrect: true },
+      { text: "'55555'", isCorrect: false },
+      { text: "'25'", isCorrect: false },
+      { text: "55555", isCorrect: false }
+  ]
+
+},
+{
+  id: 6,
+  q: "Que renvoie 10>12 ?",
+  a: [{ text: "10", isCorrect: false },
+      { text: "False", isCorrect: true },
+      { text: "Erreur", isCorrect: false },
+      { text: "12", isCorrect: false }
+  ]
+
+},
+{
+  id: 7,
+  q: "Que renvoie 2*'pa' ?",
+  a: [{ text: "papa", isCorrect: false },
+      { text: "Erreur", isCorrect: false },
+      { text: "'papa'", isCorrect: true },
+      { text: "'pa pa'", isCorrect: false }
+  ]
+
+},
+{
+  id: 8,
+  q: "Que renvoie 3*'3' ?",
+  a: [{ text: "9", isCorrect: false },
+      { text: "'9'", isCorrect: false },
+      { text: "27", isCorrect: false },
+      { text: "'333'", isCorrect: true }
+  ]
+
+},
+{
+  id: 9,
+  q: "Que renvoie 0==0 ?",
+  a: [{ text: "Erreur", isCorrect: false },
+      { text: "'0==0'", isCorrect: false },
+      { text: "0", isCorrect: false },
+      { text: "True", isCorrect: true }
+  ]
+
+},
+{
+  id: 10,
+  q: "Que renvoie 12>=12 ?",
+  a: [{ text: "True", isCorrect: true },
+      { text: "12", isCorrect: false },
+      { text: "'True'", isCorrect: false },
+      { text: "False", isCorrect: false }
+  ]
+
+},
+{
+  id: 11,
+  q: "Que renvoie 10/5 ?",
+  a: [{ text: "2.0", isCorrect: true },
+      { text: "2", isCorrect: false },
+      { text: "True", isCorrect: false },
+      { text: "False", isCorrect: false }
+  ]
+
+},
+{
+  id: 12,
+  q: "Comment créer une variable v et lui attribuer la valeur 18 ?",
+  a: [{ text: "'a'=18", isCorrect: false },
+      { text: "a=18", isCorrect: true },
+      { text: "a==18", isCorrect: false },
+      { text: "a='18'", isCorrect: false }
+  ]
+
+},
+{
+  id: 13,
+  q: "Combien vaut c dans le programme suivant ? : a=3; b=8; c=a+b",
+  a: [{ text: "None", isCorrect: false },
+      { text: "'a+b'", isCorrect: false },
+      { text: "a+b", isCorrect: false },
+      { text: "11", isCorrect: true }
+  ]
+
+},
+{
+  id: 14,
+  q: " Que vaut b à la fin dans le programme suivant ? : a=5; b=4; c=a+b; b=c+a",
+  a: [{ text: "False", isCorrect: false },
+      { text: "14", isCorrect: true },
+      { text: "9", isCorrect: false },
+      { text: "13", isCorrect: false }
   ]
 
 }
+
+
 
 ]
 
