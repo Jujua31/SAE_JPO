@@ -233,15 +233,23 @@ const evaluate = document.getElementsByClassName("evaluate");
 
 // Evaluate method
 evaluate[0].addEventListener("click", () => {
-  if (selected == "true") {
-      result[0].innerHTML = "True";
-      result[0].style.color = "green";
-  } else {
-      result[0].innerHTML = "False";
-      result[0].style.color = "red";
-  }
-  document.querySelector('.evaluate').innerHTML = 'Question Suivante'; //Change le texte du bouton
-})
+    if (document.querySelector('.evaluate').innerHTML != "Question Suivante") {
+      if (selected == "true") {
+          result[0].innerHTML = "True";
+          result[0].style.color = "green";
+      } else {
+          result[0].innerHTML = "False";
+          result[0].style.color = "red";
+      }
+      document.querySelector('.evaluate').innerHTML = "Question Suivante"; //Change le texte du bouton
+      var button_selec = "2";
+ } else {
+      id++;
+      iterate(id);
+      console.log(id);
+      document.querySelector('.evaluate').innerHTML = "Valider";  
+    }})
+
 }
 
 if (start) {
@@ -251,10 +259,11 @@ iterate("0");
 // Next button and method
 const next = document.getElementsByClassName('next')[0];
 var id = 0;
+var button_selec = 1;
 
 next.addEventListener("click", () => {
 start = false;
-if (id < 2) {
+if (id < 9) {
   id++;
   iterate(id);
   console.log(id);
