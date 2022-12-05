@@ -233,7 +233,12 @@ const evaluate = document.getElementsByClassName("evaluate");
 
 // Evaluate method
 evaluate[0].addEventListener("click", () => {
-    if (document.querySelector('.evaluate').innerHTML != "Question Suivante") {
+    if (document.querySelector('.evaluate').innerHTML == "Question Suivante") {
+      id++;
+      iterate(id);
+      console.log(id);
+      document.querySelector('.evaluate').innerHTML = "Valider";  
+ } else {
       if (selected == "true") {
           result[0].innerHTML = "True";
           result[0].style.color = "green";
@@ -242,12 +247,6 @@ evaluate[0].addEventListener("click", () => {
           result[0].style.color = "red";
       }
       document.querySelector('.evaluate').innerHTML = "Question Suivante"; //Change le texte du bouton
-      var button_selec = "2";
- } else {
-      id++;
-      iterate(id);
-      console.log(id);
-      document.querySelector('.evaluate').innerHTML = "Valider";  
     }})
 
 }
