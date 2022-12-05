@@ -41,6 +41,16 @@ const Questions = [{
 },
 {
   id: 4,
+  q: "liste = []\nfor i in range(3):\n    liste.append(i)\nQue contient la liste res après l'exécution de ce code ?",
+  a: [{ text: "[]", isCorrect: false },
+      { text: "[1,2,3]", isCorrect: false },
+      { text: "[3]", isCorrect: false },
+      { text: "[0,1,2]", isCorrect: true }
+  ]
+
+},
+{
+  id: 5,
   q: "liste = [1,2,3,4]\nres = []\nfor elt in liste:\n__res.append(elt+1)\nQue contient la liste res après l'exécution de ce code ?",
   a: [{ text: "[]", isCorrect: false },
       { text: "[1,2,3,4]", isCorrect: true },
@@ -49,6 +59,46 @@ const Questions = [{
   ]
 
 },
+{
+  id: 6,
+  q: "for i in range(1):\n    if i == 1:\n        print(1)\n    else:\n        print(“perdu”)\nQu’affichera la boucle suivante ?",
+  a: [{ text: "rien", isCorrect: false },
+      { text: "'perdu'", isCorrect: true },
+      { text: "erreur", isCorrect: false },
+      { text: "1", isCorrect: false }
+  ]
+
+},
+{
+  id: 7,
+  q: "res=0\n    if i == 1:\nliste=[2,8,7,5]\nfor i in range(len(liste)):\n    res.append(liste[i])\nQue vaut res après l’exécution de ce code ?",
+  a: [{ text: "Error", isCorrect: true },
+      { text: "6", isCorrect: false },
+      { text: "10", isCorrect: false },
+      { text: "22", isCorrect: false }
+  ]
+
+},
+{
+  id: 8,
+  q: "tuple=(1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5)\ni=0\nwhile i < len(tuple):\n    tuple.append(i)\n    i+=1\nCombien d'éléments contient le tuple après l’exécution de ce code?",
+  a: [{ text: "35", isCorrect: false },
+      { text: "70", isCorrect: true },
+      { text: "Error", isCorrect: false },
+      { text: "69", isCorrect: false }
+  ]
+
+},
+{
+  id: 9,
+  q: "liste=[3,4,9,2,3,1]\nres=0 \nfor elt in liste:\n    if elt > 3:\n        res+=2\nCombien vaut res après l’exécution de ce code ?",
+  a: [{ text: "0", isCorrect: false },
+      { text: "8", isCorrect: false },
+      { text: "4", isCorrect: true },
+      { text: "Error", isCorrect: false }
+  ]
+
+}
 ]
 
 // Set start

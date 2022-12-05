@@ -240,6 +240,7 @@ evaluate[0].addEventListener("click", () => {
       result[0].innerHTML = "False";
       result[0].style.color = "red";
   }
+  document.querySelector('.evaluate').innerHTML = 'Question Suivante';
 })
 }
 

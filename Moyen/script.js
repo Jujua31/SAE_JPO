@@ -218,6 +218,8 @@ iterate("0");
 const next = document.getElementsByClassName('next')[0];
 var id = 0;
 
+$(next).style.display = 'none';
+
 next.addEventListener("click", () => {
 start = false;
 if (id < 2) {
