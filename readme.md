@@ -1,7 +1,7 @@
 JPO - MOOC Python
-====
+==
 Lien Session LiveShare
-=
+-
 https://prod.liveshare.vsengsaas.visualstudio.com/join?177E6DF04CBE50D5A17B18DC5443789F0137
 
 ***
