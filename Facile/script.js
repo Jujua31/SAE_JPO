@@ -233,24 +233,26 @@ const evaluate = document.getElementsByClassName("evaluate");
 
 // Evaluate method
 evaluate[0].addEventListener("click", () => {
-    start = false;
+  
     if (document.querySelector('.evaluate').innerHTML == "Question Suivante") {
-      if (id < 9) {
-      id++;
-      iterate(id);
-      console.log(id);
-      document.querySelector('.evaluate').innerHTML = "Valider";  
-    }
- } else {
-      if (selected == "true") {
-          result[0].innerHTML = "True";
-          result[0].style.color = "green";
-      } else {
-          result[0].innerHTML = "False";
-          result[0].style.color = "red";
+      if (id < 2) {
+        start = false;
+        id++;
+        iterate(id);
+        console.log(id);
+        document.querySelector('.evaluate').innerHTML = "Valider";  
       }
-      document.querySelector('.evaluate').innerHTML = "Question Suivante"; //Change le texte du bouton
-    }})
+    } else {
+          document.querySelector('.evaluate').innerHTML = "Question Suivante"; //Change le texte du bouton
+          if (selected == "true") {
+              result[0].innerHTML = "True";
+              result[0].style.color = "green";
+          } else {
+              result[0].innerHTML = "False";
+              result[0].style.color = "red";
+          }
+    }
+})
 
 }
 
