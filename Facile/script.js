@@ -233,11 +233,14 @@ const evaluate = document.getElementsByClassName("evaluate");
 
 // Evaluate method
 evaluate[0].addEventListener("click", () => {
+  if (id < 9) {
+    start = false;
     if (document.querySelector('.evaluate').innerHTML == "Question Suivante") {
       id++;
       iterate(id);
       console.log(id);
       document.querySelector('.evaluate').innerHTML = "Valider";  
+    }
  } else {
       if (selected == "true") {
           result[0].innerHTML = "True";
