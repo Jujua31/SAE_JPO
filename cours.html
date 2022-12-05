@@ -6,15 +6,22 @@
     <link rel="stylesheet" href="cours.css"/>
     <link rel="icon" href="img\iut_logo_alpha.png"/>
   </head>
+  <body>
   <header>
     <h1>Journées Portes Ouvertes - Python</h1>
   </header>
-  <body>
+    <nav>
+      <ul>
+        <li><a href="#Cours_facile">A. Cours Facile</a></li>
+        <li><a href="#Cours_moyen">B. Cours niveau moyen</a></li>
+        <li><a href="#Cours_difficile">C. Cours niveau difficile</a></li>
+      </ul>
+    </nav>
     <section id="Cours_facile">
         <h1>A. Cours Facile</h1>
         <h2>I. </h2>
         <p>Pour créer une variable en python il suffit de mettre le nom de la variable, et la valeur qu’on veut lui donner en séparant les 2 d’un égal.</p> 
-        <h3> Exemple:</h3> 
+        <h3> Exemple :</h3> 
         <p> k=2</p>
         <h2>II. </h2>
         <p>Il y a différents types de variables:</p> 
@@ -24,7 +31,7 @@
             <li><span>str</span> ( string ) qui sont des chaînes de caractères et qui sont représentés avec des guillemets, </li>
             <li><span>bool</span> qui sont vrai ou faux, représentés par True et False.</li>
         </ul>
-        <h3>Exemple:</h3>
+        <h3>Exemples :</h3>
         <ul>
             <li>int → 3</li> 
             <li>float → 2.3</li>  
@@ -44,7 +51,7 @@
           <li><span>tuple</span>, qui n'est pas un élement mutable   </li>
       </ul>
       <p>Il existe plusieurs types de “conteneurs” de valeurs. Par exemple, pour contenir des nombres entiers, on peut utiliser une liste ou un tuple. Une liste est dite mutable alors qu’un tuple est non-mutable. Un objet mutable est un objet auquel on peut modifier, enlever ou ajouter les valeurs. </p>
-      <h3>Exemple:</h3>
+      <h3>Exemples :</h3>
       <ul>
         <li>ma_liste = [0,1]</li>
         <li>ma_liste.append(2)</li> 
@@ -54,20 +61,25 @@
       </ul>
       <h2>II. Accès aux valeurs</h2>
       <p>Pour accéder à une valeur dans un tuple ou une liste, on utilise l’indexation. Chaque élément est associé à un “rang”. Le premier élément est associé au rang 0, le deuxième au rang 1, etc…</p> 
-      <h3>Exemple:</h3>
+      <h3>Exemples :</h3>
       <ul>
       <li>ma_liste = [1,2,3]</li> 
       <li>ma_liste[0] → renvoie 1</li>  
       <li>ma_liste[2] → renvoie 3</li>  
       </ul>
     </section>
-    <section id="Cours_difficle">
+    <section id="Cours_difficile">
       <h1>C. Cours niveau difficile</h1>
       <h2>I. Itérer grâce à une boucle</h2>
-      <p>Pour parcourir les éléments d’une liste, on peut utiliser la boucle for avec soit un parcours par élément donc en prenant directement chaque élément ou un parcours par indice en prenant les positions des éléments dans la liste, qui fonctionne avec range, dans laquelle on entre la taille de la liste.
-        Par exemple : “for elt in liste” pour le parcours par élément, et “for i in range(len(liste))” pour le parcours par élément.
-        On peut aussi faire un parcours par indice avec la boucle while, en imposant une condition qui, tant qu’elle est respectée, la boucle est lancée.
-        Par exemple “i=0; while i” et en ajoutant 1 à i à chaque tour de boucle.</p>
+      <p>Pour parcourir les éléments d’une liste, on peut utiliser la boucle for avec soit un parcours par élément donc en prenant directement chaque élément ou un parcours par indice en prenant les positions des éléments dans la liste, qui fonctionne avec range, dans laquelle on entre la taille de la liste.</p>
+        <h3>Exemples :</h3> 
+        <p>“for elt in liste” pour le parcours par élément</p>
+        <p>“for i in range(len(liste))” pour le parcours par élément.</p>
+        <h2>II.</h2>
+        <p>On peut aussi faire un parcours par indice avec la boucle while, en imposant une condition qui, tant qu’elle est respectée, la boucle est lancée.</p>
+        
+        <h3>Exemple :</h3> 
+        <p>“i=0; while i” et en ajoutant 1 à i à chaque tour de boucle.</p>
       
     </section>
   
