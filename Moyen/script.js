@@ -40,16 +40,6 @@ const Questions = [{
 
 },
 {
-  id: 4,
-  q: "Quel mot-clé utiliser pour ajouter une valeur à une liste ?",
-  a: [{ text: "remove", isCorrect: false },
-      { text: "add", isCorrect: false },
-      { text: "append", isCorrect: true },
-      { text: "+", isCorrect: false }
-  ]
-
-},
-{
   id: 5,
   q: "Comment modifier la valeur 1 dans le tuple (1,2) en 3 ?",
   a: [{ text: "tuple[0] = 3", isCorrect: true },
