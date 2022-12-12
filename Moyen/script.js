@@ -108,6 +108,8 @@ const next = document.getElementsByClassName('next')[0];
 var id = 0;
 var bonnerep = 0;
 var mauvaisrep = 0;
+var activereponse = "";
+var evaluatebutton = false;
 
 
 // Iterate
