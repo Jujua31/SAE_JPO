@@ -1,7 +1,7 @@
 // Questions will be asked
 const Questions = [{
   id: 0,
-  q: "liste = [2,4,1,8]\nfor elt in liste: \n____print('SUS')\nCombien de fois la boucle 'for' s'exécute ?",
+  q: "liste = [2,4,1,8]\nfor elt in liste: \n____print('SUS')\n\nCombien de fois la boucle 'for' s'exécute ?",
   a: [{ text: "8", isCorrect: false },
       { text: "4", isCorrect: true },
       { text: "3", isCorrect: false },
@@ -11,7 +11,7 @@ const Questions = [{
 },
 {
   id: 1,
-  q: "liste = [1,2,3,4]\nfor elt in liste:\n____res = res + elt\nCombien vaut res après l'exécution de ce code ?",
+  q: "liste = [1,2,3,4]\nfor elt in liste:\n____res = res + elt\n\nCombien vaut res après l'exécution de ce code ?",
   a: [{ text: "4", isCorrect: false, isSelected: false },
       { text: "0", isCorrect: false },
       { text: "1", isCorrect: false },
@@ -21,7 +21,7 @@ const Questions = [{
 },
 {
   id: 2,
-  q: "i = 0\nwhile i < 3:\n____print(i)\n____i = i + 1\nQue vaut i a la fin de la boucle ?",
+  q: "i = 0\nwhile i < 3:\n____print(i)\n____i = i + 1\n\nQue vaut i a la fin de la boucle ?",
   a: [{ text: "2", isCorrect: false },
       { text: "1", isCorrect: false },
       { text: "3", isCorrect: true },
@@ -31,7 +31,7 @@ const Questions = [{
 },
 {
   id: 3,
-  q: "liste = [2,1,4,8]\nfor i in range(len(liste)):\n____print('sussy baka')\nQue vaut i après l'exécution de ce code ?",
+  q: "liste = [2,1,4,8]\nfor i in range(len(liste)):\n____print('sussy baka')\n\nQue vaut i après l'exécution de ce code ?",
   a: [{ text: "0", isCorrect: false },
       { text: "8", isCorrect: false },
       { text: "3", isCorrect: false },
@@ -41,7 +41,7 @@ const Questions = [{
 },
 {
   id: 4,
-  q: "liste = []\nfor i in range(3):\n____liste.append(i)\nQue contient la liste res après l'exécution de ce code ?",
+  q: "liste = []\nfor i in range(3):\n____liste.append(i)\n\nQue contient la liste res après l'exécution de ce code ?",
   a: [{ text: "[]", isCorrect: false },
       { text: "[1,2,3]", isCorrect: false },
       { text: "[3]", isCorrect: false },
@@ -51,7 +51,7 @@ const Questions = [{
 },
 {
   id: 5,
-  q: "liste = [1,2,3,4]\nres = []\nfor elt in liste:\n____res.append(elt+1)\nQue contient la liste res après l'exécution de ce code ?",
+  q: "liste = [1,2,3,4]\nres = []\nfor elt in liste:\n____res.append(elt+1)\n\nQue contient la liste res après l'exécution de ce code ?",
   a: [{ text: "[]", isCorrect: false },
       { text: "[1,2,3,4]", isCorrect: false },
       { text: "[2,3,4,5]", isCorrect: true },
@@ -61,7 +61,7 @@ const Questions = [{
 },
 {
   id: 6,
-  q: "for i in range(1):\n____if i == 1:\n________print(1)\n____else:\n________print(“perdu”)\nQu’affichera la boucle suivante ?",
+  q: "for i in range(1):\n____if i == 1:\n________print(1)\n____else:\n________print(“perdu”)\n\nQu’affichera la boucle suivante ?",
   a: [{ text: "rien", isCorrect: false },
       { text: "'perdu'", isCorrect: true },
       { text: "erreur", isCorrect: false },
@@ -71,7 +71,7 @@ const Questions = [{
 },
 {
   id: 7,
-  q: "res=0\nliste=[2,8,7,5]\nfor i in range(len(liste)):\n____res.append(liste[i])\nQue vaut res après l’exécution de ce code ?",
+  q: "res=0\nliste=[2,8,7,5]\nfor i in range(len(liste)):\n____res.append(liste[i])\n\nQue vaut res après l’exécution de ce code ?",
   a: [{ text: "Error", isCorrect: true },
       { text: "6", isCorrect: false },
       { text: "10", isCorrect: false },
@@ -81,7 +81,7 @@ const Questions = [{
 },
 {
   id: 8,
-  q: "tuple=(1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5)\ni=0\nwhile i < len(tuple):\n____tuple.append(i)\n____i+=1\nCombien d'éléments contient le tuple après l’exécution de ce code?",
+  q: "tuple=(1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5)\ni=0\nwhile i < len(tuple):\n____tuple.append(i)\n____i+=1\n\nCombien d'éléments contient le tuple après l’exécution de ce code?",
   a: [{ text: "35", isCorrect: true },
       { text: "70", isCorrect: false },
       { text: "Error", isCorrect: false },
@@ -91,7 +91,7 @@ const Questions = [{
 },
 {
   id: 9,
-  q: "liste=[3,4,9,2,3,1]\nres=0 \nfor elt in liste:\n_____if elt > 3:\n________res+=2\nCombien vaut res après l’exécution de ce code ?",
+  q: "liste=[3,4,9,2,3,1]\nres=0 \nfor elt in liste:\n_____if elt > 3:\n________res+=2\n\nCombien vaut res après l’exécution de ce code ?",
   a: [{ text: "0", isCorrect: false },
       { text: "8", isCorrect: false },
       { text: "4", isCorrect: true },
