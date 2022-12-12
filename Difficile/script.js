@@ -103,6 +103,10 @@ const Questions = [{
 
 // Set start
 var start = true;
+// Next button and method
+const next = document.getElementsByClassName('next')[0];
+var id = 0;
+
 
 // Iterate
 function iterate(id) {
@@ -141,37 +145,37 @@ var selected = "";
 
 // Show selection for op1
 op1.addEventListener("click", () => {
-  op1.style.backgroundColor = "lightgoldenrodyellow";
-  op2.style.backgroundColor = "lightskyblue";
-  op3.style.backgroundColor = "lightskyblue";
-  op4.style.backgroundColor = "lightskyblue";
+  op1.style.backgroundColor = "darkmagenta";
+  op2.style.backgroundColor = "mediumorchid";
+  op3.style.backgroundColor = "mediumorchid";
+  op4.style.backgroundColor = "mediumorchid";
   selected = op1.value;
 })
 
 // Show selection for op2
 op2.addEventListener("click", () => {
-  op1.style.backgroundColor = "lightskyblue";
-  op2.style.backgroundColor = "lightgoldenrodyellow";
-  op3.style.backgroundColor = "lightskyblue";
-  op4.style.backgroundColor = "lightskyblue";
+  op1.style.backgroundColor = "mediumorchid";
+  op2.style.backgroundColor = "darkmagenta";
+  op3.style.backgroundColor = "mediumorchid";
+  op4.style.backgroundColor = "mediumorchid";
   selected = op2.value;
 })
 
 // Show selection for op3
 op3.addEventListener("click", () => {
-  op1.style.backgroundColor = "lightskyblue";
-  op2.style.backgroundColor = "lightskyblue";
-  op3.style.backgroundColor = "lightgoldenrodyellow";
-  op4.style.backgroundColor = "lightskyblue";
+  op1.style.backgroundColor = "mediumorchid";
+  op2.style.backgroundColor = "mediumorchid";
+  op3.style.backgroundColor = "darkmagenta";
+  op4.style.backgroundColor = "mediumorchid";
   selected = op3.value;
 })
 
 // Show selection for op4
 op4.addEventListener("click", () => {
-  op1.style.backgroundColor = "lightskyblue";
-  op2.style.backgroundColor = "lightskyblue";
-  op3.style.backgroundColor = "lightskyblue";
-  op4.style.backgroundColor = "lightgoldenrodyellow";
+  op1.style.backgroundColor = "mediumorchid";
+  op2.style.backgroundColor = "mediumorchid";
+  op3.style.backgroundColor = "mediumorchid";
+  op4.style.backgroundColor = "darkmagenta";
   selected = op4.value;
 })
 
@@ -187,23 +191,27 @@ evaluate[0].addEventListener("click", () => {
       result[0].innerHTML = "Mauvaise Réponse !";
       result[0].style.color = "red";
   }
+  evaluatebutton = true;
+})
+
+next.addEventListener("click", () => {
+  if (evaluatebutton == true)  {
+    start = false;
+    if (id < 9) {
+      id++;
+      iterate(id);
+      console.log(id);
+      op1.style.backgroundColor = "mediumorchid";
+      op2.style.backgroundColor = "mediumorchid";
+      op3.style.backgroundColor = "mediumorchid";
+      op4.style.backgroundColor = "mediumorchid";
+      selected = "";
+      evaluatebutton = false;
+    }
+  }
 })
 }
 
 if (start) {
 iterate("0");
 }
-
-// Next button and method
-const next = document.getElementsByClassName('next')[0];
-var id = 0;
-
-next.addEventListener("click", () => {
-start = false;
-if (id < 9) {
-  id++;
-  iterate(id);
-  console.log(id);
-}
-
-})
