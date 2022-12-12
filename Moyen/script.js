@@ -118,7 +118,7 @@ const Questions = [{
       { text: "tuple[4]", isCorrect: false }
   ]
 
-},
+}
 ]
 
 // Set start
@@ -201,10 +201,10 @@ const evaluate = document.getElementsByClassName("evaluate");
 // Evaluate method
 evaluate[0].addEventListener("click", () => {
   if (selected == "true") {
-      result[0].innerHTML = "True";
+      result[0].innerHTML = "Réponse Vraie ! ";
       result[0].style.color = "green";
   } else {
-      result[0].innerHTML = "False";
+      result[0].innerHTML = "Réponse Fausse";
       result[0].style.color = "red";
   }
 })
@@ -218,11 +218,9 @@ iterate("0");
 const next = document.getElementsByClassName('next')[0];
 var id = 0;
 
-$(next).style.display = 'none';
-
 next.addEventListener("click", () => {
 start = false;
-if (id < 2) {
+if (id < 9) {
   id++;
   iterate(id);
   console.log(id);
