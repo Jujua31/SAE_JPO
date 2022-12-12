@@ -1,5 +1,4 @@
 body{
-    margin: 5px;
     padding: 0px;
     font-family: 'Poppins', sans-serif;
 }
@@ -15,6 +14,7 @@ main p {
 }
 
 header {
+    margin: 5px;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -46,7 +46,7 @@ footer p {
 footer {
     color: white;
     background-color: darkorchid;
-    margin: 0px;
+    margin: 5px;
     padding: 2.51em;
     text-align: center;
 }
