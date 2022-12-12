@@ -42,10 +42,10 @@ const Questions = [{
 {
   id: 5,
   q: "Comment modifier la valeur 1 dans le tuple (1,2) en 3 ?",
-  a: [{ text: "tuple[0] = 3", isCorrect: true },
+  a: [{ text: "tuple[0] = 3", isCorrect: false },
       { text: "tiple[0][3]", isCorrect: false },
       { text: "tuple[1] = 3", isCorrect: false },
-      { text: "tuple['3']", isCorrect: false }
+      { text: "On ne peut pas", isCorrect: true }
   ]
 },
 {
