@@ -181,10 +181,10 @@ const evaluate = document.getElementsByClassName("evaluate");
 // Evaluate method
 evaluate[0].addEventListener("click", () => {
   if (selected == "true") {
-      result[0].innerHTML = "True";
+      result[0].innerHTML = "Réponse Vraie ! ";
       result[0].style.color = "green";
   } else {
-      result[0].innerHTML = "False";
+      result[0].innerHTML = "Réponse Fausse";
       result[0].style.color = "red";
   }
 })

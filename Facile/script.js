@@ -149,9 +149,6 @@ const Questions = [{
   ]
 
 }
-
-
-
 ]
 
 // Set start
@@ -233,27 +230,14 @@ const evaluate = document.getElementsByClassName("evaluate");
 
 // Evaluate method
 evaluate[0].addEventListener("click", () => {
-  
-    if (document.querySelector('.evaluate').innerHTML == "Question Suivante") {
-      if (id < 2) {
-        start = false;
-        id++;
-        iterate(id);
-        console.log(id);
-        document.querySelector('.evaluate').innerHTML = "Valider";  
-      }
-    } else {
-          document.querySelector('.evaluate').innerHTML = "Question Suivante"; //Change le texte du bouton
-          if (selected == "true") {
-              result[0].innerHTML = "True";
-              result[0].style.color = "green";
-          } else {
-              result[0].innerHTML = "False";
-              result[0].style.color = "red";
-          }
-    }
+  if (selected == "true") {
+      result[0].innerHTML = "Réponse Vraie ! ";
+      result[0].style.color = "green";
+  } else {
+      result[0].innerHTML = "Réponse Fausse";
+      result[0].style.color = "red";
+  }
 })
-
 }
 
 if (start) {
@@ -273,3 +257,4 @@ if (id < 9) {
 }
 
 })
+
