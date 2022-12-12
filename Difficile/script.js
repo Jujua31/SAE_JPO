@@ -11,7 +11,7 @@ const Questions = [{
 },
 {
   id: 1,
-  q: "liste = [1,2,3,4]\nfor elt in liste:\n____res = res + elt\n\nCombien vaut res après l'exécution de ce code ?",
+  q: "res = 0\nliste = [1,2,3,4]\nfor elt in liste:\n____res = res + elt\n\nCombien vaut res après l'exécution de ce code ?",
   a: [{ text: "4", isCorrect: false, isSelected: false },
       { text: "0", isCorrect: false },
       { text: "1", isCorrect: false },
