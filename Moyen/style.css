@@ -12,6 +12,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-right: 6.5em;
 }
 .question-container{
     margin: 10px;
