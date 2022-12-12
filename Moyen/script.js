@@ -106,6 +106,8 @@ var start = true;
 // Next button and method
 const next = document.getElementsByClassName('next')[0];
 var id = 0;
+var bonnerep = 0;
+var mauvaisrep = 0;
 
 
 // Iterate
@@ -205,6 +207,12 @@ next.addEventListener("click", () => {
       op2.style.backgroundColor = "mediumorchid";
       op3.style.backgroundColor = "mediumorchid";
       op4.style.backgroundColor = "mediumorchid";
+      
+      if (selected == "true"){
+        bonnerep++;
+      } else {
+        mauvaisrep++;
+      }
       selected = "";
       evaluatebutton = false;
     } else if (id < 9) {
@@ -216,6 +224,11 @@ next.addEventListener("click", () => {
       op2.style.backgroundColor = "mediumorchid";
       op3.style.backgroundColor = "mediumorchid";
       op4.style.backgroundColor = "mediumorchid";
+      if (selected == "true"){
+        bonnerep++;
+      } else {
+        mauvaisrep++;
+      }
       selected = "";
       evaluatebutton = false;
     } else {
