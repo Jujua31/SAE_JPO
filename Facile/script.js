@@ -275,7 +275,6 @@ next.addEventListener("click", () => {
   }
 })
 }
-}
 
 if (start) {
 iterate("0");
