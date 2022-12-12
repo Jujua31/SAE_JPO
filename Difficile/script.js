@@ -41,7 +41,7 @@ const Questions = [{
 },
 {
   id: 4,
-  q: "liste = []\nfor i in range(3):\n____liste.append(i)\n\nQue contient la liste res après l'exécution de ce code ?",
+  q: "liste = []\nfor i in range(3):\n____liste.append(i)\n\nQue contient la liste après l'exécution de ce code ?",
   a: [{ text: "[]", isCorrect: false },
       { text: "[1,2,3]", isCorrect: false },
       { text: "[3]", isCorrect: false },
