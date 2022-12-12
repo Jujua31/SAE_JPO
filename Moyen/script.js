@@ -93,8 +93,8 @@ const Questions = [{
   id: 9,
   q: "Comment accéder à la valeur d'indice 2 dans le tuple (2,9,4) ?",
   a: [{ text: "tuple['4']", isCorrect: false },
-      { text: "tuple[2]", isCorrect: false },
-      { text: "tuple[1]", isCorrect: true },
+      { text: "tuple[2]", isCorrect: true },
+      { text: "tuple[1]", isCorrect: false },
       { text: "tuple[4]", isCorrect: false }
   ]
 
