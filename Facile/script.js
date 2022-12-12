@@ -1,7 +1,7 @@
 // Questions will be asked
 const Questions = [{
   id: 0,
-  q: "x=5.15   Quel type de variable est x ?",
+  q: "x=5.15\n\nQuel type de variable est x ?",
   a: [{ text: "int", isCorrect: false },
       { text: "float", isCorrect: true },
       { text: "decimal", isCorrect: false },
@@ -11,7 +11,7 @@ const Questions = [{
 },
 {
   id: 1,
-  q: "y=False   Quel type de variable est y ?",
+  q: "y=False\n\nQuel type de variable est y ?",
   a: [{ text: "bool", isCorrect: true},
       { text: "boule", isCorrect: false },
       { text: "float", isCorrect: false },
@@ -21,7 +21,7 @@ const Questions = [{
 },
 {
   id: 2,
-  q: "z='z'   Quel type de variable est z ?",
+  q: "z='z'\n\nQuel type de variable est z ?",
   a: [{ text: "int", isCorrect: false },
       { text: "float", isCorrect: false },
       { text: "str", isCorrect: true },
@@ -31,7 +31,7 @@ const Questions = [{
 },
 {
   id: 3,
-  q: "a=5.0   Quel type de variable est a ?",
+  q: "a=5.0\n\nQuel type de variable est a ?",
   a: [{ text: "int", isCorrect: false },
       { text: "float", isCorrect: true },
       { text: "str", isCorrect: false },
@@ -131,7 +131,7 @@ const Questions = [{
 },
 {
   id: 13,
-  q: "Combien vaut c dans le programme suivant ? :\na=3\nb=8\nc=a+b",
+  q: "Combien vaut c dans le programme suivant ? :\n\n\na=3\nb=8\nc=a+b",
   a: [{ text: "None", isCorrect: false },
       { text: "'a+b'", isCorrect: false },
       { text: "a+b", isCorrect: false },
@@ -141,7 +141,7 @@ const Questions = [{
 },
 {
   id: 14,
-  q: " Que vaut b à la fin dans le programme suivant ? :\na=5\nb=4\nc=a+b\nb=c+a",
+  q: " Que vaut b à la fin dans le programme suivant ? :\n\n\na=5\nb=4\nc=a+b\nb=c+a",
   a: [{ text: "False", isCorrect: false },
       { text: "14", isCorrect: true },
       { text: "9", isCorrect: false },
