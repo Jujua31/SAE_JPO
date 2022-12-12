@@ -19,7 +19,7 @@ header {
     flex-wrap: wrap;
     text-align: center;
     background-color: darkorchid;
-    padding: 1em;
+    padding: 0em;
     flex-grow: 1;
 }
 
@@ -47,7 +47,7 @@ footer {
     color: white;
     background-color: darkorchid;
     margin: 5px;
-    padding: 2.51em;
+    padding: 0em;
     text-align: center;
 }
 
