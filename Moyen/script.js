@@ -11,7 +11,7 @@ const Questions = [{
 },
 {
   id: 1,
-  q: "Que retourne le programme suivant : \na = () \n a.append(1)",
+  q: "Que retourne le programme suivant :\n\n \na = () \n a.append(1)",
   a: [{ text: "Erreur", isCorrect: true, isSelected: false },
       { text: "1", isCorrect: false },
       { text: "(1)", isCorrect: false },
