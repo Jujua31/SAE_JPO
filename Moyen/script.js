@@ -57,7 +57,7 @@ const Questions = [{
       { text: "tuple[1] = 3", isCorrect: false },
       { text: "tuple['3']", isCorrect: false }
   ]
-
+},
 {
   id: 6,
   q: "De quel type est le tuple ?",
