@@ -1,0 +1,66 @@
+nav a{
+    color:white
+}
+nav {
+    display:flex;
+    flex-wrap:nowrap;
+}
+li {
+    list-style:none;
+    
+    
+}
+a {
+    text-decoration:none
+}
+
+nav li {
+    background-color:darkorchid;   
+}
+
+.menu {
+    display: flex;              /* Transformation en flexbox */
+    padding:0;                  /* Suppression des marges internes */
+    background-color: #ccc;     /* Ajout de la couleur d'arrière-plan */
+}
+.menu a {
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */
+}
+
+.menu a {
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */   
+    
+    margin: 0.5rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: center;           /* Centrage du texte */   
+    background-color: darkorchid;    /* Couleur d'arrière-plan */
+    color: #fff;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+}
+
+nav>ul{
+    display:flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    list-style-type: None;
+    width: 100%;
+    background-color: darkorchid;
+    padding:0;    
+}
+
+.menu {
+    display: flex;              /* Transformation en flexbox */
+    padding:0;                  /* Suppression des marges internes */
+    background-color: #ccc;     /* Ajout de la couleur d'arrière-plan */
+    justify-content: center  /* Alignements des liens dans le menu */
+}
+
+.menu li{
+    margin:10px;
+    flex-grow:1
+}
+
