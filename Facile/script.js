@@ -134,7 +134,7 @@ const Questions = [{
   q: "Combien vaut c dans le programme suivant ? :\n\n\na=3\nb=8\nc=a+b",
   a: [{ text: "None", isCorrect: false },
       { text: "'a+b'", isCorrect: false },
-      { text: "a+b", isCorrect: false },
+      { text: "11.0", isCorrect: false },
       { text: "11", isCorrect: true }
   ]
 
