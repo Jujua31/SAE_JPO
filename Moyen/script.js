@@ -189,9 +189,15 @@ evaluate[0].addEventListener("click", () => {
   if (selected == "true") {
       result[0].innerHTML = "Bonne Réponse !";
       result[0].style.color = "green";
+      if (activereponse == "") {
+        activereponse = true;
+      }
   } else {
       result[0].innerHTML = "Mauvaise Réponse !";
       result[0].style.color = "red";
+      if (activereponse == "") {
+        activereponse = "false";
+      }
   }
   evaluatebutton = true;
 })
@@ -224,11 +230,12 @@ next.addEventListener("click", () => {
       op2.style.backgroundColor = "mediumorchid";
       op3.style.backgroundColor = "mediumorchid";
       op4.style.backgroundColor = "mediumorchid";
-      if (selected == "true"){
+      if (activereponse == true){
         bonnerep++;
       } else {
         mauvaisrep++;
       }
+      activereponse = "";
       selected = "";
       evaluatebutton = false;
     } else {
