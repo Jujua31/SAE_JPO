@@ -232,6 +232,7 @@ next.addEventListener("click", () => {
       selected = "";
       evaluatebutton = false;
     } else {
+      alert('Vous avez obtenu un résultat de '+ bonnerep +"/"+ (bonnerep+mauvaisrep));
       window.location.replace("../accueil.html"); 
     }
     
