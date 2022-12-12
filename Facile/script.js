@@ -121,7 +121,7 @@ const Questions = [{
 },
 {
   id: 12,
-  q: "Comment créer une variable v et lui attribuer la valeur 18 ?",
+  q: "Comment créer une variable a et lui attribuer la valeur 18 ?",
   a: [{ text: "'a'=18", isCorrect: false },
       { text: "a=18", isCorrect: true },
       { text: "a==18", isCorrect: false },
@@ -231,10 +231,10 @@ const evaluate = document.getElementsByClassName("evaluate");
 // Evaluate method
 evaluate[0].addEventListener("click", () => {
   if (selected == "true") {
-      result[0].innerHTML = "Réponse Vraie ! ";
+      result[0].innerHTML = "Bonne Réponse !";
       result[0].style.color = "green";
   } else {
-      result[0].innerHTML = "Réponse Fausse";
+      result[0].innerHTML = "mauvaise Réponse !";
       result[0].style.color = "red";
   }
 })

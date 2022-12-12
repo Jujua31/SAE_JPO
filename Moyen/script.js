@@ -1,7 +1,7 @@
 // Questions will be asked
 const Questions = [{
   id: 0,
-  q: "Quesl mot-clé utiliser pour définir une fonction",
+  q: "Quel mot-clé utiliser pour définir une fonction ?",
   a: [{ text: "definir", isCorrect: false },
       { text: "def", isCorrect: true },
       { text: "fonction", isCorrect: false },
@@ -53,11 +53,10 @@ const Questions = [{
   id: 5,
   q: "Comment modifier la valeur 1 dans le tuple (1,2) en 3 ?",
   a: [{ text: "tuple[0] = 3", isCorrect: true },
-      { text: "tuple[0][3]", isCorrect: false },
+      { text: "tiple[0][3]", isCorrect: false },
       { text: "tuple[1] = 3", isCorrect: false },
       { text: "tuple['3']", isCorrect: false }
   ]
-
 },
 {
   id: 6,
@@ -201,10 +200,10 @@ const evaluate = document.getElementsByClassName("evaluate");
 // Evaluate method
 evaluate[0].addEventListener("click", () => {
   if (selected == "true") {
-      result[0].innerHTML = "Réponse Vraie ! ";
+      result[0].innerHTML = "Bonne Réponse !";
       result[0].style.color = "green";
   } else {
-      result[0].innerHTML = "Réponse Fausse";
+      result[0].innerHTML = "Mauvaise Réponse !";
       result[0].style.color = "red";
   }
 })
