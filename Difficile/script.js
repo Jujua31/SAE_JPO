@@ -22,9 +22,9 @@ const Questions = [{
 {
   id: 2,
   q: "i = 0\nwhile i < 3:\n____print(i)\n____i = i + 1\nQue vaut i a la fin de la boucle ?",
-  a: [{ text: "2", isCorrect: true },
+  a: [{ text: "2", isCorrect: false },
       { text: "1", isCorrect: false },
-      { text: "3", isCorrect: false },
+      { text: "3", isCorrect: true },
       { text: "La boucle ne s'arrête jamais", isCorrect: false }
   ]
 
@@ -53,8 +53,8 @@ const Questions = [{
   id: 5,
   q: "liste = [1,2,3,4]\nres = []\nfor elt in liste:\n____res.append(elt+1)\nQue contient la liste res après l'exécution de ce code ?",
   a: [{ text: "[]", isCorrect: false },
-      { text: "[1,2,3,4]", isCorrect: true },
-      { text: "[2,3,4,5]", isCorrect: false },
+      { text: "[1,2,3,4]", isCorrect: false },
+      { text: "[2,3,4,5]", isCorrect: true },
       { text: "[5,6,7,8]", isCorrect: false }
   ]
 
@@ -82,8 +82,8 @@ const Questions = [{
 {
   id: 8,
   q: "tuple=(1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5)\ni=0\nwhile i < len(tuple):\n____tuple.append(i)\n____i+=1\nCombien d'éléments contient le tuple après l’exécution de ce code?",
-  a: [{ text: "35", isCorrect: false },
-      { text: "70", isCorrect: true },
+  a: [{ text: "35", isCorrect: true },
+      { text: "70", isCorrect: false },
       { text: "Error", isCorrect: false },
       { text: "69", isCorrect: false }
   ]

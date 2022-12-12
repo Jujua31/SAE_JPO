@@ -121,7 +121,7 @@ const Questions = [{
 },
 {
   id: 12,
-  q: "Comment créer une variable v et lui attribuer la valeur 18 ?",
+  q: "Comment créer une variable a et lui attribuer la valeur 18 ?",
   a: [{ text: "'a'=18", isCorrect: false },
       { text: "a=18", isCorrect: true },
       { text: "a==18", isCorrect: false },
