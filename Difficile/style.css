@@ -72,3 +72,12 @@ body{
     color: white;
     background-color: #BF3325;
 }
+
+img{
+    width:120px;
+    height:120px;
+    float:left
+}
+header h1{
+    text-align: center;
+}
