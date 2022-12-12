@@ -40,16 +40,7 @@ const Questions = [{
 
 },
 {
-  id: 5,
-  q: "Comment modifier la valeur 1 dans le tuple (1,2) en 3 ?",
-  a: [{ text: "tuple[0] = 3", isCorrect: false },
-      { text: "tiple[0][3]", isCorrect: false },
-      { text: "tuple[1] = 3", isCorrect: false },
-      { text: "On ne peut pas", isCorrect: true }
-  ]
-},
-{
-  id: 6,
+  id: 4,
   q: "De quel type est le tuple ?",
   a: [{ text: "non-mutable", isCorrect: true },
       { text: "unmute", isCorrect: false },
@@ -59,7 +50,7 @@ const Questions = [{
 
 },
 {
-  id: 7,
+  id: 5,
   q: "De quel type est la liste ?",
   a: [{ text: "mutable", isCorrect: true },
       { text: "mutant", isCorrect: false },
@@ -69,7 +60,7 @@ const Questions = [{
 
 },
 {
-  id: 8,
+  id: 6,
   q: "Comment définir une liste ?",
   a: [{ text: "liste = ()", isCorrect: false },
       { text: "liste = []", isCorrect: true },
@@ -79,7 +70,7 @@ const Questions = [{
 
 },
 {
-  id: 9,
+  id: 7,
   q: "Comment connaître la taille d'une chaine de caractères ?",
   a: [{ text: "taille(mot)", isCorrect: false },
       { text: "size(mot)", isCorrect: false },
@@ -89,7 +80,7 @@ const Questions = [{
 
 },
 {
-  id: 10,
+  id: 8,
   q: "Comment accéder à la valeur 5 dans la liste [1,5,7,9] ?",
   a: [{ text: "liste[1]", isCorrect: true },
       { text: "liste[5]", isCorrect: false },
@@ -99,7 +90,7 @@ const Questions = [{
 
 },
 {
-  id: 11,
+  id: 9,
   q: "Comment accéder à la valeur d'indice 2 dans le tuple (2,9,4) ?",
   a: [{ text: "tuple['4']", isCorrect: false },
       { text: "tuple[2]", isCorrect: false },
@@ -206,7 +197,7 @@ evaluate[0].addEventListener("click", () => {
 next.addEventListener("click", () => {
   if (evaluatebutton == true)  {
     start = false;
-    if (id < 9) {
+    if (id < 8) {
       id++;
       iterate(id);
       console.log(id);
@@ -216,9 +207,24 @@ next.addEventListener("click", () => {
       op4.style.backgroundColor = "mediumorchid";
       selected = "";
       evaluatebutton = false;
+    } else if (id < 9) {
+      next.innerText = "Finir le Test";
+      id++;
+      iterate(id);
+      console.log(id);
+      op1.style.backgroundColor = "mediumorchid";
+      op2.style.backgroundColor = "mediumorchid";
+      op3.style.backgroundColor = "mediumorchid";
+      op4.style.backgroundColor = "mediumorchid";
+      selected = "";
+      evaluatebutton = false;
+    } else {
+      window.location.replace("../accueil.html"); 
     }
+    
   }
 })
+}
 }
 
 if (start) {
