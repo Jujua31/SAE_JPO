@@ -31,11 +31,11 @@ const Questions = [{
 },
 {
   id: 3,
-  q: "Comment ajouter i = 2 à cpt déjà égal à 5 (de manière à obtenir la somme : 5 + 2 = 7) ?",
-  a: [{ text: "cpt + i", isCorrect: false },
-      { text: "cpt = cpt + i", isCorrect: true },
-      { text: "cpt = i", isCorrect: false },
-      { text: "i = cpt", isCorrect: false }
+  q: "Comment ajouter i = 2 à compteur déjà égal à 5 ?",
+  a: [{ text: "compteur + i", isCorrect: false },
+      { text: "compteur = compteur + i", isCorrect: true },
+      { text: "compteur = i", isCorrect: false },
+      { text: "i = compteur", isCorrect: false }
   ]
 
 },
@@ -49,6 +49,14 @@ const Questions = [{
   ]
 
 },
+{
+  id: 5,
+  q: "Comment modifier la valeur 1 dans le tuple (1,2) en 3 ?",
+  a: [{ text: "tuple[0] = 3", isCorrect: true },
+      { text: "tiple[0][3]", isCorrect: false },
+      { text: "tuple[1] = 3", isCorrect: false },
+      { text: "tuple['3']", isCorrect: false }
+  ]
 
 {
   id: 6,

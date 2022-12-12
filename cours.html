@@ -8,7 +8,7 @@
   </head>
   <body>
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" alt="image">
+    <a href="accueil.html "> <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png"   alt="image"></a>
     <h1>Journées Portes Ouvertes - Python</h1>
   </header>
     <nav>
@@ -31,7 +31,7 @@
             <li><span>int</span> (integer number) qui sont les nombres entiers. </li>
             <li><span>float</span> (floating point number) qui sont les nombres à virgules, </li>
             <li><span>str</span> ( string ) qui sont des chaînes de caractères et qui sont représentés avec des guillemets, </li>
-            <li><span>bool</span> qui sont vrai ou faux, représentés par True et False.</li>
+            <li><span>bool</span> qui sont vrai ou faux, prennent comme valeur True ou False.</li>
         </ul>
         <h3>Exemples :</h3>
         <ul>
@@ -46,29 +46,30 @@
       </section>
     <section id="Cours_moyen">
       <h1>B. Cours niveau moyen</h1>
-      <h2>I. Comment définir une fonction, à quoi ça sert ?</h2>
-      <p>Une fonction python est une suite d’instructions à laquelle on peut donner un nom et des paramètres.</p> 
+      <h2>I. Fonctions et stockage de variables</h2>
+      <p> Une fonction python est une suite d’instructions à laquelle on peut donner un nom et des paramètres. Pour la définir, il faut écrire "def" le nom de la fonction ainsi que ses paramètres (si elle en a) entre parenthèse suivi de deux points.</p> 
       <h3>Il existe différents types de variables conteneurs :</h3> 
       <ul>
           <li><span>liste</span>, qui est un élement mutable  </li>
           <li><span>tuple</span>, qui n'est pas un élement mutable   </li>
       </ul>
-      <p>Il existe plusieurs types de “conteneurs” de valeurs. Par exemple, pour contenir des nombres entiers, on peut utiliser une liste ou un tuple. Une liste est dite mutable alors qu’un tuple est non-mutable. Un objet mutable est un objet auquel on peut modifier, enlever ou ajouter les valeurs. </p>
+      <p>Il existe plusieurs types de “conteneurs” de valeurs. Par exemple, pour contenir des nombres entiers, on peut utiliser une liste ou un tuple. Une liste est dite mutable alors qu’un tuple est non-mutable. Un objet mutable est un objet auquel on peut modifier, enlever ou ajouter les valeurs.
+        On peut utiliser append pour ajouter un élément à une liste, cela s'écrit liste.append(element). </p>
       <h3>Exemples :</h3>
       <ul>
         <li>ma_liste = [0,1]</li>
         <li>ma_liste.append(2)</li> 
         <li>ma_liste → [0,1,2]</li>
         <li>mon_tuple = (0,1) </li>
-        <li>mon_tuple.append(2) → provoque une erreur</li>
+        
       </ul>
       <h2>II. Accès aux valeurs</h2>
       <p>Pour accéder à une valeur dans un tuple ou une liste, on utilise l’indexation. Chaque élément est associé à un “rang”. Le premier élément est associé au rang 0, le deuxième au rang 1, etc…</p> 
       <h3>Exemples :</h3>
       <ul>
-      <li>ma_liste = [1,2,3]</li> 
-      <li>ma_liste[0] → renvoie 1</li>  
+      <li>ma_liste = [1,2,3]</li>   
       <li>ma_liste[2] → renvoie 3</li>  
+      <li>mon_tuple[0] = 2 → provoque une erreur</li>
       </ul>
       <a href="Moyen/index.html"> Quizz moyen </a>
     </section>
