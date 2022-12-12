@@ -197,7 +197,7 @@ evaluate[0].addEventListener("click", () => {
 next.addEventListener("click", () => {
   if (evaluatebutton == true)  {
     start = false;
-    if (id < 9) {
+    if (id < 8) {
       id++;
       iterate(id);
       console.log(id);
@@ -207,7 +207,21 @@ next.addEventListener("click", () => {
       op4.style.backgroundColor = "mediumorchid";
       selected = "";
       evaluatebutton = false;
+    } else if (id < 9) {
+      next.innerText = "Finir le Test";
+      id++;
+      iterate(id);
+      console.log(id);
+      op1.style.backgroundColor = "mediumorchid";
+      op2.style.backgroundColor = "mediumorchid";
+      op3.style.backgroundColor = "mediumorchid";
+      op4.style.backgroundColor = "mediumorchid";
+      selected = "";
+      evaluatebutton = false;
+    } else {
+      window.location.replace("../accueil.html"); 
     }
+    
   }
 })
 }
