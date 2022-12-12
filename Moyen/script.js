@@ -1,7 +1,7 @@
 // Questions will be asked
 const Questions = [{
   id: 0,
-  q: "Quesl mot-clé utiliser pour définir une fonction",
+  q: "Quel mot-clé utiliser pour définir une fonction ?",
   a: [{ text: "definir", isCorrect: false },
       { text: "def", isCorrect: true },
       { text: "fonction", isCorrect: false },
@@ -200,10 +200,10 @@ const evaluate = document.getElementsByClassName("evaluate");
 // Evaluate method
 evaluate[0].addEventListener("click", () => {
   if (selected == "true") {
-      result[0].innerHTML = "Réponse Vraie ! ";
+      result[0].innerHTML = "Bonne Réponse !";
       result[0].style.color = "green";
   } else {
-      result[0].innerHTML = "Réponse Fausse";
+      result[0].innerHTML = "Mauvaise Réponse !";
       result[0].style.color = "red";
   }
 })
