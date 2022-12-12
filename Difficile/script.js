@@ -34,8 +34,8 @@ const Questions = [{
   q: "liste = [2,1,4,8]\nfor i in range(len(liste)):\n____print('sussy baka')\n\nQue vaut i après l'exécution de ce code ?",
   a: [{ text: "0", isCorrect: false },
       { text: "8", isCorrect: false },
-      { text: "3", isCorrect: false },
-      { text: "4", isCorrect: true }
+      { text: "3", isCorrect: true },
+      { text: "4", isCorrect: false }
   ]
 
 },
