@@ -214,11 +214,12 @@ next.addEventListener("click", () => {
       op3.style.backgroundColor = "mediumorchid";
       op4.style.backgroundColor = "mediumorchid";
       
-      if (selected == "true"){
+      if (activereponse == true){
         bonnerep++;
       } else {
         mauvaisrep++;
       }
+      activereponse = "";
       selected = "";
       evaluatebutton = false;
     } else if (id < 9) {
